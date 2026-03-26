@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Sneakers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Modele Sneakers</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">New Arrivals</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Product Section -->
+  <section class="product-section">
+    <div class="product-container">
+
+      <!-- Left Side -->
+      <div class="product-gallery">
+        <div class="badge">HOT 🔥</div>
+
+        <img id="main-image" src="./images/shoe1.jpg" alt="Sneaker" class="main-image" />
+
+        <div class="thumbnails">
+          <img src="./images/shoe1.jpg" onclick="changeImage(this.src)" alt="shoe1" />
+          <img src="./images/shoe2.jpg" onclick="changeImage(this.src)" alt="shoe2" />
+          <img src="./images/shoe3.jpg" onclick="changeImage(this.src)" alt="shoe3" />
+          <img src="./images/shoe4.jpg" onclick="changeImage(this.src)" alt="shoe4" />
+        </div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="product-details">
+        <p class="category">Men's Running Shoes</p>
+        <h1>AirFlex Max Sneakers</h1>
+        <p class="brand">By Urban Kicks</p>
+
+        <div class="ratings">
+          <span>⭐ ⭐ ⭐ ⭐ ⭐</span>
+          <p>(4.8 • 256 Reviews)</p>
+        </div>
+
+        <div class="price-box">
+          <span class="current-price">₹4,999</span>
+          <span class="old-price">₹7,499</span>
+          <span class="discount">33% OFF</span>
+        </div>
+
+        <p class="description">
+          Step into unmatched comfort and modern street style with the AirFlex Max Sneakers.
+          Built with breathable mesh, premium sole grip, and lightweight cushioning for all-day wear.
+        </p>
+
+        <!-- Size -->
+        <div class="size-section">
+          <h3>Select Size</h3>
+          <div class="sizes">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>10</button>
+          </div>
+        </div>
+
+        <!-- Quantity -->
+        <div class="quantity-section">
+          <h3>Quantity</h3>
+          <div class="quantity-box">
+            <button onclick="decreaseQuantity()">-</button>
+            <input type="number" id="qty" value="1" min="1" />
+            <button onclick="increaseQuantity()">+</button>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="action-buttons">
+          <button class="add-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+
+        <!-- Offer Box -->
+        <div class="offer-box">
+          <h4>🎁 Special Offer</h4>
+          <p>Get extra 10% off on your first purchase. Use code: <strong>FIRST10</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
